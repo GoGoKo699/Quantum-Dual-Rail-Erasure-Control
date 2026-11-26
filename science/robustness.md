@@ -9,9 +9,13 @@ Relabel the rails so that $`a=(\Gamma_0-\Gamma_1)/4\gt 0`$ at the nominal operat
 Then $`r`$ measures state dependence of survival. If the propagator is calibrated, an ideal terminal filter produces an exact erasure channel with survival $`b e^{-r}`$. Alternatively a known polar unitary correction preserves all surviving trials and leaves the normalized filter $`\sqrt{X^\dagger X}`$. Pulse calibration can also change the logical rotation. The channel bound below includes that change.
 
 For a constant resonant-drive amplitude $`c`$, a static detuning $`\delta`$ and a differential rate $`a`$, the trace-free code generator and its exponential are
+
 ```math
 K=-a Z-i(c X_{\mathrm P}+\delta Z),\qquad
-\Omega^2=c^2-a^2+\delta^2-2ia\delta,\qquad
+\Omega^2=c^2-a^2+\delta^2-2ia\delta.
+```
+
+```math
 X(T)=C I+S K,
 \quad C=\cos(\Omega T),\quad S=\frac{\sin(\Omega T)}{\Omega}.
 ```
@@ -46,7 +50,7 @@ At fixed $`a\gt 0`$, the nominal return time grows as $`\pi/\sqrt{2a(c-a)}`$ as 
 
 ## Arbitrary pulse errors
 
-For the same terminal time $`T`$, let $`X_0(t)`$ be a calibrated nominal trajectory with anisotropy $`r_0(t)=2\log\|X_0(t)\|`$. Let the actual normalized generator differ by $`-\Delta a(t) Z-i\Delta H(t)`$, with $`\Delta H(t)`$ Hermitian. For integrable perturbations the actual terminal imbalance obeys
+For the same terminal time $`T`$, let $`X_0(t)`$ be a calibrated nominal trajectory with anisotropy $`r_0(t)=2\log(\|X_0(t)\|)`$. Let the actual normalized generator differ by $`-\Delta a(t) Z-i\Delta H(t)`$, with $`\Delta H(t)`$ Hermitian. For integrable perturbations the actual terminal imbalance obeys
 ```math
 r(T)\le r_0(T)
  +2\int_0^T\left[\cosh r_0(t)\,|\Delta a(t)|
@@ -54,7 +58,7 @@ r(T)\le r_0(T)
 ```
 A scalar part of $`\Delta H`$ can be removed. This bound covers deterministic envelope, phase and detuning deviations, including finite ramps relative to a square reference pulse. It includes extra elapsed time by extending the reference trajectory to the same stop time.
 
-For the proof, put $`Y=X_0^{-1}X`$. Its generator is $`B=X_0^{-1}(-\Delta a Z-i\Delta H)X_0`$. The inequality $`(\|Yv\|^2)'\le 2\|\mathrm{Herm}B\|\,\|Yv\|^2`$ holds almost everywhere. Thus $`\log\|Y(T)\|\le\int_0^T\|\mathrm{Herm}B\|dt`$ and $`\|X\|\le\|X_0\|\|Y\|`$. In the eigenbasis of the positive polar factor of $`X_0`$, its eigenvalues are $`e^{\pm r_0/2}`$. Hermitian symmetrization of the similarity scales the off-diagonal entries of a Hermitian perturbation by $`\cosh r_0`$ and leaves the diagonal unchanged. For an anti-Hermitian perturbation, it removes the diagonal and scales the magnitude of the off-diagonal entries by $`\sinh r_0`$. These give the stated operator-norm bounds. For a nominal exact return $`r_0(T)=0`$, the integral controls the entire survival mismatch. The coherent contribution vanishes for an equal-loss nominal trajectory because $`X_0`$ is then unitary.
+For the proof, put $`Y=X_0^{-1}X`$. Its generator is $`B=X_0^{-1}(-\Delta a Z-i\Delta H)X_0`$. The inequality $`(\|Yv\|^2)'\le 2\|\mathrm{Herm}B\|\,\|Yv\|^2`$ holds almost everywhere. Thus $`\log(\|Y(T)\|)\le\int_0^T\|\mathrm{Herm}B\|dt`$ and $`\|X\|\le\|X_0\|\|Y\|`$. In the eigenbasis of the positive polar factor of $`X_0`$, its eigenvalues are $`e^{\pm r_0/2}`$. Hermitian symmetrization of the similarity scales the off-diagonal entries of a Hermitian perturbation by $`\cosh r_0`$ and leaves the diagonal unchanged. For an anti-Hermitian perturbation, it removes the diagonal and scales the magnitude of the off-diagonal entries by $`\sinh r_0`$. These give the stated operator-norm bounds. For a nominal exact return $`r_0(T)=0`$, the integral controls the entire survival mismatch. The coherent contribution vanishes for an equal-loss nominal trajectory because $`X_0`$ is then unitary.
 
 The channel distance can also include uncompensated rotation and changes to the common loss rate. Let $`\mathcal E_A`$ and $`\mathcal E_{A_0}`$ be the two vacuum-flag channels for the actual and nominal physical propagators. Their half diamond distance satisfies
 ```math
