@@ -1,0 +1,20 @@
+# Quantum Dual-Rail Erasure Control
+
+> Exact bounded coherent synthesis of state-independent erasure from unequal Markovian decay in a dual-rail qubit.
+
+## Reader routes
+
+- [README](README.md) starts with the control task and earliest exact deadline.
+- [Scientific account](science/README.md) follows the model, optimization and calibration results.
+- [Learning route](learning/README.md) links the Watrous bridge and the 30 project milestones.
+- [Verification](verification/README.md) explains reproducible finite checks and what requires proof.
+
+## Claim locations
+
+- [Physical interface](science/model.md#physical-model) specifies the one-excitation input, bounded two-rail drive and absorbing vacuum flag.
+- [Full channel](science/model.md#the-full-channel) covers arbitrary input entanglement with a reference.
+- [Pulse and guarantee](science/frontier.md#pulse-and-guarantee) gives the exact deadline and the closed-form optimum survival at any deadline. The finite-deadline optimum concerns deterministic coherent drives.
+- [Hyperbolic comparison](science/frontier.md#proof-by-hyperbolic-comparison) proves the all-waveform optimum under the model.
+- [Optional terminal filter](science/frontier.md#optional-terminal-filter) gives an additional physical operation with explicit rejection cost.
+- [Calibration](science/robustness.md) distinguishes input-dependent loss from coherent error in the surviving logical qubit.
+- [Related work](references/RELATED_WORK.md) identifies inherited constant-drive physics, echo and filtering techniques, and mathematical tools.
