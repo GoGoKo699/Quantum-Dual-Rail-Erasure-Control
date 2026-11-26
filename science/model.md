@@ -17,7 +17,7 @@ The calibrated nonnegative rates $`\Gamma_j`$ are constant. The baths are inacce
 The surviving block is described by a single contraction $`A(T)`$:
 
 ```math
-\dot A=\left(-\tfrac12\operatorname{diag}(\Gamma_0,\Gamma_1)-iH(t)\right)A,
+\dot A=\left(-\tfrac12\mathrm{diag}(\Gamma_0,\Gamma_1)-iH(t)\right)A,
 \qquad A(0)=I.
 ```
 
@@ -25,7 +25,7 @@ Here $`H`$ is restricted to the one-excitation sector. With $`\rho`$ an input de
 
 ```math
 \mathcal E_A(\rho)=A\rho A^\dagger\;\oplus\;
-\operatorname{Tr}[(I-A^\dagger A)\rho]\,|e\rangle\langle e|.
+\mathrm{Tr}[(I-A^\dagger A)\rho]\,|e\rangle\langle e|.
 ```
 
 The formula follows by integrating the flux into vacuum and using trace preservation. With a reference, replace the scalar trace by the partial trace over the logical input, or equivalently extend this linear map by the identity on the reference. Thus the flag can be correlated with the reference whenever $`A^\dagger A`$ has unequal eigenvalues.
