@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     env:
-      CAPTURE_REVISION: d1de5e56dc4ed3a023cfbd47c8c67b7f2f590cf1
+      CAPTURE_REVISION: 16c3ca746579bf1ca5c69db9a3927d63d88ed290
     steps:
       - name: Check out the validation helper source
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262

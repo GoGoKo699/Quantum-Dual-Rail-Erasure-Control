@@ -2,10 +2,10 @@
 
 **How quickly can a bounded coupling turn unequal rail loss into a state-independent erasure?** A single constant resonant pulse is optimal at every deadline. With sufficient coupling and time, the qubit either survives intact or reaches an orthogonal vacuum flag. Before that deadline, the same control law gives the best worst-case survival and, with a terminal filter, the best survival of an exact erasure channel.
 
-Let $`\Gamma_0,\Gamma_1`$ be the two fixed excitation decay rates, $`a=|\Gamma_0-\Gamma_1|/4>0`$ their scaled difference, and $`g`$ the peak rail coupling. The earliest exact coherent pulse has length
+Let $`\Gamma_0,\Gamma_1`$ be the two fixed excitation decay rates, $`a=|\Gamma_0-\Gamma_1|/4\gt 0`$ their scaled difference, and $`g`$ the peak rail coupling. The earliest exact coherent pulse has length
 
 ```math
-T_*=\frac{\pi}{\sqrt{g^2-a^2}},\qquad g>a.
+T_*=\frac{\pi}{\sqrt{g^2-a^2}},\qquad g\gt a.
 ```
 
 | Deadline or coupling | Pulse and outcome |
