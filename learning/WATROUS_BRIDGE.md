@@ -38,7 +38,7 @@ effect `I − A†A`. For an input `ρ_CR` with a reference, the probability
 and unnormalized reference state on vacuum are supplied by
 
 ```math
-\operatorname{Tr}_{C}\bigl[((I-A^\dagger A)\otimes I_R)\rho_{CR}\bigr].
+\mathrm{Tr}_{C}\bigl[((I-A^\dagger A)\otimes I_R)\rho_{CR}\bigr].
 ```
 
 The branch formula has an equivalent completely positive expression with
@@ -51,20 +51,20 @@ If $`A^\dagger A=pI`$, then $`A=\sqrt p\,U`$ for a unitary
 $`U`$ at positive $`p`$. The input survives with probability
 $`p`$ and the known $`U`$ preserves its correlations. The vacuum
 branch leaves the unnormalized reference marginal
-$`(1-p)\operatorname{Tr}_{C}\rho_{CR}`$. Conversely, input-independent
+$`(1-p)\mathrm{Tr}_{C}\rho_{CR}`$. Conversely, input-independent
 survival implies $`\langle\psi|A^\dagger A|\psi\rangle=p`$ for
 every unit vector and therefore $`A^\dagger A=pI`$.
 
 ## A two-rail example
 
 Suppose one idle rail has amplitude survival $`1/2`$ and the other is
-lossless. With no mixing, $`A=\operatorname{diag}(1/2,1)`$.
+lossless. With no mixing, $`A=\mathrm{diag}(1/2,1)`$.
 The two basis inputs survive with probabilities $`1/4`$ and $`1`$.
 An equal superposition survives with probability $`5/8`$ and
 its conditional state has rail occupation probabilities $`1/5`$ and
 $`4/5`$. Thus no detected loss still changes the state.
 
-A terminal filter $`F=\operatorname{diag}(1,1/2)`$ restores equal
+A terminal filter $`F=\mathrm{diag}(1,1/2)`$ restores equal
 survival. The product $`FA=I/2`$ gives success probability $`1/4`$
 on every input, and failure joins the vacuum flag. The filter cannot reach
 the geometric-mean survival $`1/2`$ in this example; that would require
