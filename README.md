@@ -15,6 +15,14 @@ T_*=\frac{\pi}{\sqrt{g^2-a^2}},\qquad g\gt a.
 
 The optimality proof allows time-dependent amplitudes, phases, and detunings. Its comparison class uses two rails, loss active throughout, and deterministic number-preserving coherent control. Near the coupling threshold the earliest exact pulse can sacrifice most excitations. The [finite-time survival formula](science/frontier.md#pulse-and-guarantee) quantifies the option to finish earlier.
 
+## Run the pulse and read the flag
+
+1. **Drive the rails.** Take an unknown qubit encoded as one excitation shared between two rails. The loss baths start in vacuum. Use the calibrated decay rates, drive cap and deadline to choose the amplitude in the table. Set the relative detuning to zero and hold the resonant exchange at that amplitude with a fixed phase for the full [pulse interval](science/model.md#physical-model). Loss acts throughout, with no intermediate readout.
+2. **Read the endpoint.** Distinguish vacuum from the one-excitation sector without measuring which rail holds the excitation. Flag vacuum as an erasure and retain the qubit on survival. At exact return, survival preserves the input and its correlations with any reference. Before that return, survival can depend on the input and the relative amplitudes of a surviving state can change.
+3. **Filter if exact erasure is needed earlier.** With calibrated [terminal filter hardware](science/frontier.md#optional-terminal-filter), change to the pulse response's output singular-mode basis, attenuate the more transmissive mode to the weaker amplitude, and map back using the corresponding input singular vectors. Count filter rejection together with vacuum as erasure. An accepted output is the original qubit, with state-independent survival equal to the prefilter worst-input survival.
+
+The pulse bound charges the drive cap, elapsed time and attenuation from the two loss rates. The terminal readout and optional filter require separate endpoint hardware and time. See the [calibration bounds](science/robustness.md) and the [worked two-rail example](learning/WATROUS_BRIDGE.md#a-two-rail-example).
+
 ## Read and verify
 
 - [Channel model](science/model.md) explains the vacuum flag, the surviving state, and why unequal rates cause backaction.
